@@ -1,0 +1,33 @@
+num = int(input("Enter the number of fibonacci series you want:"))
+sum = 0
+oddSum = 0
+evenSum = 0
+oddPlace = 0
+evenPlace = 0
+print("0,1",end=",")
+a = 0
+b = 1
+oddSum+=b
+evenSum+=a
+oddPlace+=a
+evenPlace+=b
+n = 2
+while(n<=num):
+    sum = a+b
+    if sum%2 == 0:
+        evenSum+=sum
+    else:
+        oddSum+=sum
+    if n%2 == 0:
+        oddPlace+=sum
+    else:
+        evenPlace+=sum
+    print(sum, end=",")
+    a=b
+    b=sum
+    n=n+1
+print()
+print("Sum of all the odd digit numbers:",oddSum)
+print("Sum of all the even digit numbers:",evenSum)
+print("Sum of all the odd position numbers:",oddPlace)
+print("Sum of all the even position numbers:",evenPlace)

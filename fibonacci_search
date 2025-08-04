@@ -1,0 +1,36 @@
+num = int(input("Enter the number of fibonacci series you want:"))
+sum = 0
+a = 0
+b = 1
+print("0,1",end=",")
+for i in range(2,num):
+    sum = a+b
+    print(sum, end=",")
+    a=b
+    b=sum
+print()
+n = int(input("Enter the number you want to search:")) 
+s = False
+if n == 0:
+    print("Your search is successful")
+elif n == 1:
+    print("Your search is successful")
+else:
+    a=0
+    b=1
+    sum1=a+b
+    for i in range(2,num):
+        sum1 = a+b
+        if sum1 == n:
+            s==True
+        a=b
+        b=sum1
+print(sum1)
+if s:
+    print("Your search is successful")
+else:
+    print("Your search is unsuccessful")
+
+
+    
+
